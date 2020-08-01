@@ -1,0 +1,152 @@
+/* font-family: 'Rajdhani', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+html {
+  height: 100%;
+  margin: -10px -10px;
+  padding: 0;
+}
+.container {
+  background-color: white;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  text-align: center;
+  font: normal 14px/1.8 "Roboto", sans-serif;
+}
+.watch-parties-made-easy {
+  width: 100%;
+  background-image: url(assets/gradient-violet-bg.jpg);
+  background-size: cover;
+  padding: 0 25px 25px 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /*look this up*/
+}
+header {
+  width: 100%;
+  height: 83px;
+  /* background-color: teal; */
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  width: 201px;
+  height: auto;
+  top: 19px;
+  left: 20px;
+  /* z-index: 70; */
+  transition: transform 0.3s; /*look this up*/
+  display: block;
+  padding: 0;
+}
+.logo-container .logo-img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  /* display: inline-block; */
+  padding-right: 35px;
+}
+button {
+  background-color: none;
+  border: none;
+  color: white;
+  /* padding: 16px 32px; */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* transition-duration: 0.4s; */
+  cursor: pointer;
+}
+.navbutton {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 10px;
+  display: inline-block;
+}
+.openKa {
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 5px 5px;
+  margin-right: 30px;
+}
+
+.main-container {
+  padding: 0 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+.main-container img {
+  width: 60%;
+}
+.openKast {
+  padding: 9px 20px;
+  background-color: rgb(254, 144, 0);
+  color: white;
+  margin: 20px 0 30px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.publications {
+  min-height: 400px;
+  width: 100%;
+  margin: 30px;
+}
+.pubContainer {
+  margin-bottom: 30px;
+
+  display: grid;
+  height: 350px;
+  grid-template-columns: auto auto auto;
+  /* align-content: space-evenly; */
+}
+.publications h3 {
+  /* text-align: center; */
+  color: #434146;
+  font-weight: bold;
+}
+.pub1,
+.pub2,
+.pub3,
+.pub4,
+.pub5,
+.pub6 {
+  padding: 30px;
+}
+.pub-quote {
+  color: #434146;
+  max-width: 750px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+.pub-quote--auth {
+  font-style: italic;
+  color: #434146;
+  text-align: right;
+  display: block;
+}
+.what-is-kast {
+  width: 100%;
+  padding: 25px;
+  background-image: url(assets/green-bg.jpg);
+}
