@@ -2,7 +2,7 @@
 /* font-family: 'Roboto', sans-serif; */
 html {
   height: 100%;
-  margin: -10px -10px;
+  margin: -10px /*-10px*/;
   padding: 0;
 }
 .container {
@@ -10,7 +10,7 @@ html {
   color: white;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
   font: normal 14px/1.8 "Roboto", sans-serif;
 }
@@ -47,8 +47,8 @@ header {
   justify-content: space-between;
   align-items: center;
   /* overflow: hidden; */ /* sticky nav*/
-  /* position: fixed; */ /* sticky nav*/
-  top: 0;
+   /*position: fixed;  /* sticky nav*/
+  
 }
 
 .logo-container {
@@ -57,7 +57,7 @@ header {
   top: 19px;
   left: 20px;
   z-index: 70;
-  transition: transform 0.3s; /*look this up*/
+  /*transition: transform 0.3s; /*look this up*/
   display: block;
   padding: 0;
 }
@@ -65,9 +65,13 @@ header {
   width: 100%;
 }
 
-nav {
-  transition: top 0.3s;
-}
+/* nav {
+  /* transition: top 0.3s; */
+  /*position: absolute;
+  top: 0px;
+  z-index: 9999999;
+  
+} */
 .navbutton {
   padding: 11px 25px;
   /* width: 150px; */
@@ -101,7 +105,7 @@ nav {
   cursor: pointer;
 }
 .navbutton2 a {
-  color: black;
+  color: #777784;
   cursor: pointer;
 }
 
@@ -119,34 +123,57 @@ nav {
 .navbutton:hover .dropdown-box {
   display: block;
 }
-
+.navbutton a .fa{
+  font-size: 12px;;
+}
 .dropdown-box .navbutton2 {
   transition-duration: 500ms;
+  
+}
+.dropdown-box .navbutton2 a:hover {
+  color:black;
 }
 .dropdown-box .navbutton2:hover {
-  background-color: rgba(211, 211, 211, 1);
+    text-decoration:underline;
 }
 .premium:hover {
   text-decoration: underline;
 }
 .openKa {
+  
+  top: 0; 
+  right: 15px;
   border: 1px solid white;
   border-radius: 2px;
   padding: 5px 5px;
   margin-right: 30px;
   margin-left: 35px;
+  letter-spacing: 1.44px;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+}
+.openKa:hover {
+border: 3px solid white;
 }
 button {
   background-color: none;
   border: none;
   color: white;
-  /* padding: 16px 32px; */
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
-  /* transition-duration: 0.4s; */
+  transition-duration: 0.4s;
   cursor: pointer;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+button:hover{
+  transition: all 0.3s;
+  border-color: #FE9000;
+  /* height: 42px; */
 }
 .main-container {
   padding: 0 30px;
@@ -159,7 +186,7 @@ button {
 }
 .main-container img {
   width: 60%;
-  /* padding-top: 100px; */ /* sticky nav*/
+   padding-top: 100px;  /* sticky nav*/
 }
 .openKast {
   padding: 9px 20px;
@@ -177,21 +204,24 @@ button {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin: 0 auto; */
+ 
+}
+.publications h2 {
+  text-align: center;
+  color: #434146;
+  font-weight: bold;
 }
 .pubContainer {
   margin-bottom: 30px;
-
-  display: grid;
-  height: 350px;
-  grid-template-columns: auto auto auto;
-  /* align-content: space-evenly; */
-}
-.publications h2 {
-  /* text-align: center; */
-  color: #434146;
-  font-weight: bold;
+  min-height: 350px;
+  /* max-width: 100%; */
+  display: grid; 
+  /* grid-template-columns: auto auto auto; */
+  /* margin: 0 auto; */
+  grid-template-columns: repeat(auto-fit, minmax( 10%, 30%));
+  grid-column-gap: 50px;
+  
 }
 .pub1,
 .pub2,
@@ -199,7 +229,7 @@ button {
 .pub4,
 .pub5,
 .pub6 {
-  padding: 30px;
+  padding: 30px;   
 }
 .pub-quote {
   color: #434146;
