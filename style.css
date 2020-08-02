@@ -6,7 +6,7 @@ html {
   padding: 0;
 }
 .container {
-  background-color: white;
+  background-color: #531f62;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -16,7 +16,7 @@ html {
 }
 .watch-parties-made-easy {
   width: 100%;
-  background-color: #531F62;
+  background-color: #531f62;
   background-image: url(assets/gradient-violet-bg.jpg);
   background-size: cover;
 
@@ -126,8 +126,8 @@ nav {
 .dropdown-box .navbutton2:hover {
   background-color: rgba(211, 211, 211, 1);
 }
-.premium:hover{
-text-decoration: underline;
+.premium:hover {
+  text-decoration: underline;
 }
 .openKa {
   border: 1px solid white;
@@ -159,7 +159,7 @@ button {
 }
 .main-container img {
   width: 60%;
-  /* padding-top: 100px; */  /* sticky nav*/
+  /* padding-top: 100px; */ /* sticky nav*/
 }
 .openKast {
   padding: 9px 20px;
@@ -172,10 +172,11 @@ button {
 }
 
 .publications {
+  background-color: white;
   min-height: 400px;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
