@@ -17,7 +17,7 @@ html {
 .watch-parties-made-easy {
   width: 100%;
   background-color: #531f62;
-  background-image: url(./assets/gradient-violet-bg.jpg);
+  background-image: url(./asset/gradient-violet-bg.jpg);
   background-size: cover;
 
   padding: 0 25px 60px;
@@ -221,6 +221,6 @@ button {
 .what-is-kast {
   width: 100%;
   padding: 110px 25px;
-  background-image: url(assets/green-bg.jpg);
+  background-image: url(asset/green-bg.jpg);
   background-size: cover;
 }
