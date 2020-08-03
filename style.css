@@ -2,41 +2,50 @@
 /* font-family: 'Roboto', sans-serif; */
 html {
   height: 100%;
-  margin: -10px /*-10px*/;
   padding: 0;
 }
+/* body{
+  /* margin: -10px -10px; 
+} */
+
 .container {
   background-color: #531f62;
   color: white;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  /* max-width:100%; */
   text-align: center;
   font: normal 14px/1.8 "Roboto", sans-serif;
 }
+
 .watch-parties-made-easy {
   width: 100%;
   background-color: #531f62;
   background-image: url(./asset/gradient-violet-bg.jpg);
   background-size: cover;
-
   padding: 0 25px 60px;
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 h1 {
   font-size: 48px;
   font-weight: 500;
   margin: 30px 0;
   line-height: 48px;
 }
+
 h3 {
   font-size: 20px;
   margin: 0 200px 30px;
 }
+
+/* Chose to not make header sticky - as it had strange effect on dropdowns without js.*/
 header {
   width: 100%;
   height: 83px;
@@ -47,8 +56,7 @@ header {
   justify-content: space-between;
   align-items: center;
   /* overflow: hidden; */ /* sticky nav*/
-   /*position: fixed;  /* sticky nav*/
-  
+  /*position: fixed;  /* sticky nav*/
 }
 
 .logo-container {
@@ -61,17 +69,18 @@ header {
   display: block;
   padding: 0;
 }
+
 .logo-container .logo-img {
   width: 100%;
 }
 
 /* nav {
   /* transition: top 0.3s; */
-  /*position: absolute;
+/*position: absolute;
   top: 0px;
-  z-index: 9999999;
-  
+  z-index: 9999999;  
 } */
+
 .navbutton {
   padding: 11px 25px;
   /* width: 150px; */
@@ -86,10 +95,12 @@ header {
   padding: 10px 20px;
   display: inline-block;
 }
+
 .navbutton a {
   color: white;
   cursor: pointer;
 }
+
 .navbutton2 {
   background-color: white;
   padding: 11px 25px;
@@ -104,6 +115,7 @@ header {
   font-weight: 500;
   cursor: pointer;
 }
+
 .navbutton2 a {
   color: #777784;
   cursor: pointer;
@@ -123,25 +135,29 @@ header {
 .navbutton:hover .dropdown-box {
   display: block;
 }
-.navbutton a .fa{
-  font-size: 12px;;
+
+.navbutton a .fa {
+  font-size: 12px;
 }
+
 .dropdown-box .navbutton2 {
   transition-duration: 500ms;
-  
 }
+
 .dropdown-box .navbutton2 a:hover {
-  color:black;
+  color: black;
 }
+
 .dropdown-box .navbutton2:hover {
-    text-decoration:underline;
+  text-decoration: underline;
 }
+
 .premium:hover {
   text-decoration: underline;
 }
+
 .openKa {
-  
-  top: 0; 
+  top: 0;
   right: 15px;
   border: 1px solid white;
   border-radius: 2px;
@@ -150,11 +166,14 @@ header {
   margin-left: 35px;
   letter-spacing: 1.44px;
   transition-duration: 0.4s;
-  cursor: pointer; 
+  cursor: pointer;
 }
+
 .openKa:hover {
-border: 3px solid white;
+  /* animation over nav bar open kast*/
+  border: 3px solid white;
 }
+
 button {
   background-color: none;
   border: none;
@@ -170,29 +189,34 @@ button {
   background-clip: padding-box;
 }
 
-button:hover{
+button:hover {
+  /* animation over open kast*/
   transition: all 0.3s;
-  border-color: #FE9000;
+  border-color: #fe9000;
   /* height: 42px; */
 }
+
 .main-container {
   padding: 0 30px;
 
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
 }
+
 .main-container img {
   width: 60%;
-   padding-top: 100px;  /* sticky nav*/
+ justify-content: center;
+  /* padding-top: 100px;  /* sticky nav*/
 }
+
 .openKast {
   padding: 9px 20px;
   background-color: rgb(254, 144, 0);
   color: white;
-  /* margin: 20px 0 30px 0; */
+  margin: 20px 0 30px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   border-radius: 3px;
@@ -204,33 +228,34 @@ button:hover{
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  /* margin: 0 auto; */
- 
+  margin: 0 auto;
 }
+
 .publications h2 {
   text-align: center;
   color: #434146;
   font-weight: bold;
+  justify-content: center;
 }
+
 .pubContainer {
   margin-bottom: 30px;
   min-height: 350px;
-  /* max-width: 100%; */
-  display: grid; 
-  /* grid-template-columns: auto auto auto; */
-  /* margin: 0 auto; */
-  grid-template-columns: repeat(auto-fit, minmax( 10%, 30%));
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10%, 30%));
   grid-column-gap: 50px;
-  
 }
+
 .pub1,
 .pub2,
 .pub3,
 .pub4,
 .pub5,
 .pub6 {
-  padding: 30px;   
+  padding: 30px;
 }
+
 .pub-quote {
   color: #434146;
   max-width: 750px;
@@ -242,12 +267,14 @@ button:hover{
   font-size: 20px;
   font-style: italic;
 }
+
 .pub-quote--auth {
   font-style: italic;
   color: #434146;
   text-align: right;
   display: block;
 }
+
 .what-is-kast {
   width: 100%;
   padding: 110px 25px;
