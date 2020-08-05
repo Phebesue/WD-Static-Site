@@ -4,10 +4,10 @@ html {
   height: 100vh;
   /* padding: 0; */
 }
- body{
-   margin: -10px -10px; 
-   padding-right: 35px;
-} 
+body {
+  margin: -10px -10px;
+  padding-right: 35px;
+}
 
 .container {
   background-color: #531f62;
@@ -15,7 +15,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width:100%;
+  max-width: 100%;
   text-align: center;
   font: normal 14px/1.8 "Roboto", sans-serif;
 }
@@ -136,24 +136,21 @@ header {
 /* This turns the dropdown on */
 .navbutton:hover .dropdown-box {
   display: block;
-  
- }
+}
+.navbutton:hover > a .fa {
+  transform: rotate(180deg);
+}
 
 .navbutton a .fa {
   font-size: 12px;
-}
-.navbutton a .fa:hover {
-  transform: rotate(180deg);
 }
 
 .dropdown-box .navbutton2 {
   transition-duration: 500ms;
 }
-
-.dropdown-box .navbutton2 a:hover {
+.navbutton2:hover > a {
   color: black;
 }
-
 .dropdown-box .navbutton2:hover {
   text-decoration: underline;
 }
@@ -214,7 +211,7 @@ button:hover {
 
 .main-container img {
   width: 60%;
- justify-content: center;
+  justify-content: center;
   /* padding-top: 100px;  /* sticky nav*/
 }
 
