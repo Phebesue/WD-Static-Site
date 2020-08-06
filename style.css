@@ -67,7 +67,6 @@ header {
   top: 19px;
   left: 20px;
   z-index: 70;
-  /*transition: transform 0.3s; /*look this up*/
   display: block;
   padding: 0;
 }
@@ -97,18 +96,17 @@ header {
   padding: 10px 20px;
   display: inline-block;
 }
-
 .navbutton a {
   color: white;
   cursor: pointer;
 }
 
 .navbutton2 {
-  background-color: white;
-  padding: 11px 25px;
+  /* background-color: white; */
+  padding: 11px 15px;
   width: 150px;
   z-index: 100;
-  text-align: center;
+  text-align: left;
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -116,35 +114,35 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   cursor: pointer;
+  white-space: nowrap;
+  min-width: 100%;
 }
-
 .navbutton2 a {
   color: #777784;
   cursor: pointer;
 }
-
 /* This hides the dropdown */
 .dropdown-box {
   display: none;
+  background-color: white;
   position: absolute;
   /* z-index: 100; */
   padding-top: 0px;
   margin-left: -30px;
   font-weight: 400;
+  border-radius: 4px;
 }
-
 /* This turns the dropdown on */
 .navbutton:hover .dropdown-box {
   display: block;
 }
 .navbutton:hover > a .fa {
   transform: rotate(180deg);
+  transition-duration: 0.4s;
 }
-
 .navbutton a .fa {
   font-size: 12px;
 }
-
 .dropdown-box .navbutton2 {
   transition-duration: 500ms;
 }
@@ -154,11 +152,9 @@ header {
 .dropdown-box .navbutton2:hover {
   text-decoration: underline;
 }
-
 .premium:hover {
   text-decoration: underline;
 }
-
 .openKa {
   top: 0;
   right: 15px;
